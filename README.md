@@ -13,7 +13,7 @@ Series100 adds a library and a CAM file to the EagleCAD PCB design software.  As
   2. Place the display and control components (along with the other components used in your design) using Eagle's PCB layout tool.  
   3. Add any text labels you would like to have on the panel.  
   4. Export the panel definition using the CAM file and scripts provided.  
-  5. Order your panel from a laser cutting service like Pololu using the exported files.
+  5. Order your panel from a laser cutting service like [Pololu](http://www.customlasercutting.com/) using the exported files.
 
 That's it.  The board and the panel fits accurately and securely in the enclosure.  Together they allow your unique project to look like it just rolled off the manufacturing line.  
 
