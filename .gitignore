@@ -219,7 +219,7 @@ pip-log.txt
 #############
 
 # Ignore the Word files and publish the PDFs
-.docx
+*.docx
 
 #############
 ## Eagle CAD
