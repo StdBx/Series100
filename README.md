@@ -3,7 +3,7 @@ Series100
 
 Front Panel tools and Enclosure for Electronic Projects
 
-<img src="https://github.com/StdBx/Series100/blob/master/Sampler.jpg" alt="Example front panel built using StdBx Series100"alt="Series100 Sampler Example" height="260" width="390>
+<img src="https://github.com/StdBx/Series100/blob/master/Sampler.jpg" alt="Example front panel built using StdBx Series100"alt="Series100 Sampler Example" height="260" width="390>  
 
 StdBx is a group of tools and libraries intended to make it easy to create professional looking control and display panels for your electronics DIY projects.
 
