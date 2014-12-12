@@ -1,0 +1,9 @@
+StdBx uses a parts database rather than just a regular parts library.  The reason is because the parts are chosen and defined not just for their functional and board layout attributes but also for their mechanical attributes.  Each library entry carries the definition of the front panel layers as well as the normal schematic and board layout representations.  Also, it is a goal that the StdBx library components be readily available.  Therefore there may be multiple sources and or multiple manufacturers for each component.  Since both retailers and manufacturers add and drop components all the time, the information needs to be maintained dynamically.
+
+In addition the library needs to be reliable.  Each component needs to be validated so that makers can create with a minimum of iterations.  Therefore each component needs additional information recording the parts validation status.
+
+The database need not be complex or require special tools.  The file format can be CSV text which can be manipulated with any spreadsheet or (albeit cumbersomely) text editor.  It is the required fields that will make the information useful.
+
+Package - mechanical data; PCB layout data; name is StdBx serial number
+Symbol - contains schematic representation; generic name e.g. "switch, DPDT"
+Component - links to Symbol and Package; vendor data; manufacturer data; validation status; Name? Brand name? Functional name e.g. "switch, DPDT, on-mom"?
