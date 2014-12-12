@@ -21,7 +21,7 @@ Series100 adds a library and a CAM file to the EagleCAD PCB design software.  As
 
 That's it.  The board and the panel fits accurately and securely in the enclosure.  Together they allow your unique project to look like it just rolled off the manufacturing line.  
 
-For a more detailed description and instructions start with the READ ME FIRST file in the Documentation folder.  You can also read more at the SparkFun forum [here](https://forum.sparkfun.com/viewtopic.php?f=5&t=39492).  
+For a more detailed description and instructions start with the [_READ ME FIRST](https://github.com/StdBx/Series100/blob/master/Documentation/_READ%20ME%20FIRST.pdf) file in the Documentation folder.  You can also read more at the SparkFun forum [here](https://forum.sparkfun.com/viewtopic.php?f=5&t=39492).  
 
 License: All design files are licensed under Creative Commons Universal.  You are welcome to modify the designs or even use them in commercial products.  We ask that you acknowledge that your design is based on StdBx and hope that if you create any additional components or enclosure designs that you contribute them back to the StdBx libraries.  
 
