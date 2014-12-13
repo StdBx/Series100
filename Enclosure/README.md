@@ -10,9 +10,11 @@ As you can see in this picture the StdBx system is based on a mechanical archite
 
 The floor of the enclosure is also sized to fit a 4xAA cell battery holder for more portable projects. You can use standard panel mount connectors on the back panel instead of a PCB. The two shown are a barrel jack for power and a rugged USB-mini-B connector with FTDI serial converter.
 
-The enclosure is assembled from two identical pieces.  The two pieces are fastened with two screws on each side.  Together they capture the front and back panels and their associated PCBs.  There are mounting bosses for the third PCB on the bottom of the enclosure.
+The enclosure is assembled from two identical pieces.  The two pieces are fastened with two screws on each side.  Together they capture the front and back panels and their associated PCBs.  There are mounting bosses for the third PCB on the floor of the enclosure.
 
 The file Series100halfcaseRev3.1.stl in this folder is the mechanical definition for the enclosure.  You can print the file on your 3D printer or order it from 3D print companies like [MakeXYZ](http://www.makexyz.com/) or [Shapeways](http://www.shapeways.com/).  We have used both sources and the resulting prints work great.
 
-The pieces we have tested from MakeXYZ were printed from PLA at a 200 micron layer height.  The pieces from Shapeways were printed from their "Strong & Flexible Plastic" material.
+The pieces we have tested from MakeXYZ were printed from PLA at a 200 micron layer height.  The pieces from Shapeways were printed from their "Strong & Flexible Plastic" material.  Both sources provide a range of print colors.
+
+If you click on the stl file GitHub will provide an interactive 3D rendering.
 
