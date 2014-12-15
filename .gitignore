@@ -214,12 +214,6 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-#############
-## Office source
-#############
-
-# Ignore the Word files and publish the PDFs
-*.docx
 
 #############
 ## Eagle CAD
