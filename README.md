@@ -3,13 +3,13 @@ Series100
 
 StdBx is a set of tools and libraries intended to make it easy to create professional looking control and display panels for your electronics DIY projects.  Series100 is a design point for an enclosure that looks like this:  
 
-<img src="https://raw.githubusercontent.com/uChip/Series100/master/Sampler.jpg" alt="Series100 Sampler Enclosure" height="260" width="390">  
+<img src="https://raw.githubusercontent.com/StdBx/Series100/master/Sampler.jpg" alt="Series100 Sampler Enclosure shows a range of possible switches and displays" height="260" width="390">  
 Series100 Sampler Enclosure 
 
 The panels fit into an enclosure that has mounting for the circuit boards and end panels.  The enclosure design is provided in .stl format that can be printed on a 3d printer or ordered from a 3d print service company like [MakeXYZ](http://www.makexyz.com/) or [Shapeways](http://www.shapeways.com/).  
 
-<img src="https://raw.githubusercontent.com/uChip/Series100/master/OpenBox.jpg" alt="Series100 Inside" height="260" width="390">  
-Series100 Inside 
+<img src="https://raw.githubusercontent.com/uChip/Series100/master/PVRExample.jpg" alt="Series100 Inside" height="260" width="390">  
+Front Panel Example (early prototype)
 
 Series100 adds a library and a CAM file to the EagleCAD PCB design software.  As you design your circuit board the front panel is designed along with it.  It is easy to use following these steps.  
 
@@ -21,7 +21,7 @@ Series100 adds a library and a CAM file to the EagleCAD PCB design software.  As
 
 That's it.  The board and the panel fits accurately and securely in the enclosure.  Together they allow your unique project to look like it just rolled off the manufacturing line.  
 
-For a more detailed description and instructions start with the [_READ ME FIRST](https://github.com/StdBx/Series100/blob/master/Documentation/_READ%20ME%20FIRST.pdf) file in the Documentation folder.  You can also read more at the SparkFun forum [here](https://forum.sparkfun.com/viewtopic.php?f=5&t=39492).  
+For a more detailed description and instructions start with the [!READ ME FIRST](https://github.com/StdBx/Series100/blob/master/Documentation/!READ%20ME%20FIRST.pdf) file in the Documentation folder.  You can also read more at the SparkFun forum [here](https://forum.sparkfun.com/viewtopic.php?f=5&t=39492).  
 
 License: All design files are licensed under Creative Commons Universal.  You are welcome to modify the designs or even use them in commercial products.  We ask that you acknowledge that your design is based on StdBx and hope that if you create any additional components or enclosure designs that you contribute them back to the StdBx libraries.  
 

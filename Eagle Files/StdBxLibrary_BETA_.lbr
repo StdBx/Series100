@@ -1021,6 +1021,24 @@ THIS LAYOUT: per C&amp;K between C and NO.  YET TO BE VERIFIED!!&lt;br&gt;</desc
 <wire x1="2.525" y1="2.525" x2="2.525" y2="-2.525" width="0.0001" layer="244"/>
 <wire x1="2.525" y1="-2.525" x2="-2.525" y2="-2.525" width="0.0001" layer="244"/>
 </package>
+<package name="SERIES_100_BACKPANEL">
+<wire x1="0" y1="0" x2="99.06" y2="0" width="0.0254" layer="51"/>
+<wire x1="99.06" y1="0" x2="99.06" y2="55.88" width="0.0254" layer="51"/>
+<wire x1="99.06" y1="55.88" x2="0" y2="55.88" width="0.0254" layer="51"/>
+<wire x1="0" y1="55.88" x2="0" y2="0" width="0.0254" layer="51"/>
+<wire x1="100.33" y1="0" x2="-1.27" y2="0" width="0" layer="244"/>
+<wire x1="-1.27" y1="55.88" x2="100.33" y2="55.88" width="0" layer="244"/>
+<wire x1="100.33" y1="55.88" x2="101.6" y2="27.94" width="0" layer="244"/>
+<wire x1="101.6" y1="27.94" x2="100.33" y2="0" width="0" layer="244"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="27.94" width="0" layer="244"/>
+<wire x1="-2.54" y1="27.94" x2="-1.27" y2="55.88" width="0" layer="244"/>
+<wire x1="100.33" y1="0" x2="-1.27" y2="0" width="0" layer="246"/>
+<wire x1="-1.27" y1="55.88" x2="100.33" y2="55.88" width="0" layer="246"/>
+<wire x1="100.33" y1="55.88" x2="101.6" y2="27.94" width="0" layer="246"/>
+<wire x1="101.6" y1="27.94" x2="100.33" y2="0" width="0" layer="246"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="27.94" width="0" layer="246"/>
+<wire x1="-2.54" y1="27.94" x2="-1.27" y2="55.88" width="0" layer="246"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DPDT">
@@ -1910,91 +1928,18 @@ and matching panel</text>
 <text x="0" y="0" size="1.27" layer="94">Series 100 Base PCB
 with outline and mounting holes</text>
 </symbol>
+<symbol name="SERIES_100_BACKPANEL">
+<description>Series100 back panel outline.
+No board definition.
+No mounting holes.</description>
+<text x="0" y="0" size="1.27" layer="94">Series100 back panel outline.
+No board definition.
+No mounting holes.</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="BUTTON" prefix="S">
-<description>&lt;b&gt;BETA!  BUTTON, DPDT, 9x9mm body &lt;br&gt;
-Momentary &lt;/b&gt;&lt;br&gt;
-    C&amp;K # PVA2 OA H1 1.7N V2, Digi-Key # 401-1147-ND, Mouser # 611-PVA2OAH117NV2 &lt;br&gt;
-&lt;b&gt;Push-on / Push-Off &lt;/b&gt;&lt;br&gt;
-    C&amp;K # PVA2 EE H1 1.7N V2, Digi-Key # 401-1140-ND, Mouser # 611-PVA2EEH1 &lt;br&gt;
-&lt;b&gt;Cap, Round 7.4 mm&lt;/b&gt;&lt;br&gt;
-    C&amp;K PV GY (Gray), PV RD (Red), PV BK (Black), PV WH (White) &lt;br&gt;
-    Digi-Key # 401-1149-ND (Gray), 401-1150-ND (Red), 401-1148-ND (Black), 401-1151-ND (White) &lt;br&gt;
-&lt;b&gt;Cap, Rectangular 12x6 mm&lt;/b&gt;&lt;br&gt;
-    C&amp;K PE GY (Gray), PE RD (Red), PE BK (Black), PE WH (White) &lt;br&gt;
-    Digi-Key # 401-1153-ND (Gray), 401-1154-ND (Red), 401-1152-ND (Black), 401-1155-ND (White) &lt;br&gt;&lt;br&gt;
-&lt;b&gt;BUTTON, DPDT, 7x7mm body&lt;br&gt;
-Momentary &lt;/b&gt;&lt;br&gt;
-&lt;/b&gt;   E-Switch # TL2230OAF140, Digi-Key # TL2230OAF140-ND NOT STOCKED, Mouser #  612-TL2230-OA &lt;br&gt;
-&lt;b&gt;Push-on / Push-Off &lt;br&gt;
-&lt;/b&gt;   E-Switch # TL2230EEF100, Digi-Key # TL2230EEF100-ND NOT STOCKED, Mouser # 612-TL2230EEF100 &lt;br&gt;
-&lt;b&gt;Cap, Round 5.9 mm&lt;/b&gt;&lt;br&gt;
-&lt;b&gt;Cap, Rectangular 5x5mm, 9 mm tall&lt;/b&gt;&lt;br&gt;
-E-Switch #  1DFBLK (Black) , Digi-Key #, Mouser #  612-1DFBLK &lt;br&gt;
-E-Switch #  1DBLK (Black) , Digi-Key #, Mouser #  612-1D-BK &lt;br&gt;
-E-Switch #  1D-GRY (Gray) , Digi-Key #, Mouser #  612-1D-GR &lt;br&gt;</description>
-<gates>
-<gate name="G$1" symbol="DPDT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-7X7BODY-6MM-ROUNDCAP" package="7X7_BUTTON_ROUND">
-<connects>
-<connect gate="G$1" pin="1C" pad="1C"/>
-<connect gate="G$1" pin="1NC" pad="1NC"/>
-<connect gate="G$1" pin="1NO" pad="1NO"/>
-<connect gate="G$1" pin="2C" pad="2C"/>
-<connect gate="G$1" pin="2NC" pad="2NC"/>
-<connect gate="G$1" pin="2NO" pad="2NO"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-9X9BODY-7.5MM-ROUNDCAP" package="9X9_BUTTON_ROUND">
-<connects>
-<connect gate="G$1" pin="1C" pad="1C"/>
-<connect gate="G$1" pin="1NC" pad="1NC"/>
-<connect gate="G$1" pin="1NO" pad="1NO"/>
-<connect gate="G$1" pin="2C" pad="2C"/>
-<connect gate="G$1" pin="2NC" pad="2NC"/>
-<connect gate="G$1" pin="2NO" pad="2NO"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-9X9BODY-RECTCAP" package="9X9_BUTTON_RECT_H">
-<connects>
-<connect gate="G$1" pin="1C" pad="1C"/>
-<connect gate="G$1" pin="1NC" pad="1NC"/>
-<connect gate="G$1" pin="1NO" pad="1NO"/>
-<connect gate="G$1" pin="2C" pad="2C"/>
-<connect gate="G$1" pin="2NC" pad="2NC"/>
-<connect gate="G$1" pin="2NO" pad="2NO"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LCD-16X2" prefix="U">
-<description>BETA!  SB0005 - Standard text-only 16x2 parallel input LCD&lt;br&gt;
-&lt;b&gt;White on Black&lt;/b&gt;&lt;br&gt;
-Xiamen Ocular # GDM1602K 5V, SparkFun # LCD-00709&lt;br&gt;
-Xiamen Amotec Display Co Ltd # ADM1602K-NSW-FBS/3.3V, SparkFun #  LCD-09052&lt;br&gt;
-&lt;b&gt;Black on Green&lt;/b&gt;&lt;br&gt;
-Xiamen Ocular # GDM1602K 5V, SparkFun # LCD-00255&lt;br&gt;
-Xiamen Amotec Display Co Ltd # ADM1602K-FSY-YBS/3.3V, SparkFun # LCD-09053&lt;br&gt;
-&lt;b&gt;Yellow on Blue&lt;/b&gt;&lt;br&gt;
-Xiamen Ocular # GDM1602K 5V, SparkFun #  LCD-00790&lt;br&gt;&lt;br&gt;
-Standard text-only 8x2 parallel input LCD&lt;br&gt;
-&lt;b&gt;Black on Green&lt;/b&gt;&lt;br&gt;
-Amotec # ADM0802A 5V, SparkFun #  LCD-11122&lt;br&gt;
-&lt;br&gt;
-This is just a small sampling of the many different part # available, with&lt;br&gt;
-the same mechanicals and electrical interface.</description>
+<description>&lt;b&gt;BETA!  SB0005&lt;/b&gt; - Standard text-only 16x2 parallel input LCD, available in many color combinations</description>
 <gates>
 <gate name="G$1" symbol="LCD-16X2" x="0" y="0"/>
 </gates>
@@ -2025,12 +1970,8 @@ the same mechanicals and electrical interface.</description>
 </devices>
 </deviceset>
 <deviceset name="ROTARY_ENCODER_SB0011" prefix="SW">
-<description>&lt;b&gt;BETA!  SB0011 - Switch, Encoder, Rotary, 6mm D-shaft&lt;/b&gt;&lt;br&gt;
-&lt;b&gt;24 counts per revolution, with switch&lt;/b&gt;&lt;br&gt;
-Bourns, Inc. #  PEC12R-4225F-S0024, Digi-Key # PEC12R-4225F-S0024-ND, Mouser # 652-PEC12R-4225F-S24 &lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Knob - 16mm dia, 6mm D-shaft, Black body, no indicator&lt;/b&gt;&lt;br&gt;
-Eagle Knobs &amp; Dials # 450-BA600, Mouser # 450-BA600&lt;br&gt;</description>
+<description>&lt;b&gt;BETA!  SB0011&lt;/b&gt; - Switch, Encoder, Rotary, 6mm D-shaft&lt;br&gt;
+24 counts per revolution, with switch and knob</description>
 <gates>
 <gate name="G$1" symbol="ROTARY_ENCODER" x="0" y="2.54"/>
 </gates>
@@ -2050,7 +1991,7 @@ Eagle Knobs &amp; Dials # 450-BA600, Mouser # 450-BA600&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="SERIES_100" prefix="B">
-<description>SB0002 - Circuit board outline sized and with mounting that will fit the Series 100 line of StdBx enclosures.&lt;br&gt;
+<description>&lt;b&gt;RELEASED  SB0002&lt;/b&gt; - Circuit board outline sized and with mounting that will fit the Series 100 line of StdBx enclosures.&lt;br&gt;
 Components from the StdBx library include information that combined with this component will export a DXF file to create the end panel for the enclosure.</description>
 <gates>
 <gate name="G$1" symbol="SERIES_100" x="0" y="0"/>
@@ -2069,8 +2010,7 @@ Components from the StdBx library include information that combined with this co
 </devices>
 </deviceset>
 <deviceset name="BNC" prefix="J">
-<description>BETA!  SB0016 - BNC Connector, 50 Ohm, panel mount&lt;br&gt;
-TE Connectivity # 5-1634523-1, Digi-Key # A97548-ND &lt;br&gt;</description>
+<description>&lt;b&gt;BETA!  SB0016&lt;/b&gt; - BNC Connector, 50 Ohm, panel mount</description>
 <gates>
 <gate name="G$1" symbol="BNC" x="0" y="0"/>
 </gates>
@@ -2087,17 +2027,7 @@ TE Connectivity # 5-1634523-1, Digi-Key # A97548-ND &lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="DISPLAY_LED" prefix="LED">
-<description>BETA!  SB0004 - 7-Segment 4-Digit, 10mm (0.39") high, common anode, with colon &amp; apostraphy &lt;br&gt;
-&lt;b&gt;Red&lt;/b&gt;&lt;br&gt;
-Young Sun # YSD-439AR6B-35, SparkFun # COM-09483&lt;br&gt;
-&lt;b&gt;White&lt;/b&gt;&lt;br&gt;
-???????? # ATA3492BW_2, SparkFun # COM-10931&lt;br&gt;
-&lt;b&gt;Yellow&lt;/b&gt;&lt;br&gt;
-Young Sun # YSD-439AY2B-35, SparkFun # COM-09480&lt;br&gt;
-&lt;b&gt;Kelly Green&lt;/b&gt;&lt;br&gt;
-Young Sun # YSD-439AK2B-35, SparkFun # COM-09482&lt;br&gt;
-&lt;b&gt;Blue&lt;/b&gt;&lt;br&gt;
-Young Sun # YSD-439AB4B-35, SparkFun # COM-09485&lt;br&gt;</description>
+<description>&lt;b&gt;BETA!  SB0004&lt;/b&gt; - 7-Segment 4-Digit, 10mm (0.39") high, common anode, with colon &amp; apostraphy, available in various colors</description>
 <gates>
 <gate name="G$1" symbol="7-SEGMENT-4DIGIT" x="0" y="0"/>
 </gates>
@@ -2127,60 +2057,8 @@ Young Sun # YSD-439AB4B-35, SparkFun # COM-09485&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" prefix="LED" uservalue="yes">
-<description>&lt;b&gt;BETA!  LEDs&lt;/b&gt;&lt;br&gt;
-LED does NOT protrude through panel&lt;br&gt;
-Generic through-hole LEDs in 3mm, 5mm, and 10mm. Any color.  Any mfr.&lt;br&gt;
-CLEAR denotes the FP-Diffuser layer is removed (cut out) in the panel tooling.&lt;br&gt;
-DIFFUSED denotes FP-Diffuser layer remains in the panel.&lt;br&gt;</description>
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="5MM" package="LED5MM-CLEAR">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3MM" package="LED3MM-CLEAR">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3MM-DIFFUSED" package="LED3MM-DIFFUSED">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="5MM-DIFFUSED" package="LED5MM-DIFFUSED">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="BANANA_PLUG_RECEPT" prefix="J">
-<description>&lt;b&gt;BETA!  SB0017 - Banana Plug Recepticle&lt;br&gt;
-&lt;b&gt;RED&lt;/b&gt;&lt;br&gt;
-Emerson Network Power Connectivity Solutions #108-2302-621, Digi-Key # J10124-ND&lt;br&gt;
-&lt;b&gt;BLACK&lt;/b&gt;&lt;br&gt;
-Emerson Network Power Connectivity Solutions #108-2303-621, Digi-Key # J10142-ND&lt;br&gt;</description>
+<description>&lt;b&gt;BETA!  SB0017&lt;/b&gt;  - Banana Plug Recepticle, available in Red, Black or Green</description>
 <gates>
 <gate name="G$1" symbol="BANANA_PLUG_RECEPT" x="0" y="0"/>
 </gates>
@@ -2196,10 +2074,8 @@ Emerson Network Power Connectivity Solutions #108-2303-621, Digi-Key # J10142-ND
 </devices>
 </deviceset>
 <deviceset name="SPST-TOGGLE" prefix="S">
-<description>&lt;b&gt;BETA!  SB0013 - SWITCH, TOGGLE, SPST, 120V, 3A, PCB pins&lt;/b&gt;&lt;br&gt;
-&lt;b&gt;off-on : &lt;/b&gt; &lt;br&gt;
-C&amp;K # T102SHCQE, Digi-Key # CKN10151-ND, Mouser # 611-T102SHCQE &lt;br&gt;
-E-switch #200MSP6T1B1M2RE, Digi-Key # 200MSP6T1B1M2RE-ND NOT STOCKED, Mouser # 612-200MSP6T1B1M2RE NOT STOCKED&lt;br&gt;</description>
+<description>&lt;b&gt;BETA!  SB0013&lt;/b&gt; - SWITCH, TOGGLE, SPST, 120V, 3A, PCB pins&lt;br&gt;
+Available in off-on</description>
 <gates>
 <gate name="G$1" symbol="SPST-TOGGLE" x="0" y="0"/>
 </gates>
@@ -2216,27 +2092,8 @@ E-switch #200MSP6T1B1M2RE, Digi-Key # 200MSP6T1B1M2RE-ND NOT STOCKED, Mouser # 6
 </devices>
 </deviceset>
 <deviceset name="SPDT-TOGGLE" prefix="S">
-<description>&lt;b&gt;BETA!  SB0014 - SWITCH, TOGGLE, SPDT, 120V, 2A, PCB pins&lt;/b&gt;&lt;br&gt;
-&lt;b&gt; on-on : &lt;/b&gt; &lt;br&gt;
-C&amp;K # T101SHCQE, Digi-Key # CKN1091-ND, Mouser # 611-T101-001 &lt;br&gt;
-E-switch # 200MSP1T1B1M2QEH, Digi-Key # EG2447-ND, Mouser # 612-200-A1121 &lt;br&gt;
-
-&lt;b&gt; on-off-on : &lt;/b&gt; &lt;br&gt;
-C&amp;K # T103SHCQE, Digi-Key # CKN1092-ND, Mouser # 611-T103-001 &lt;br&gt;
-E-switch # 200MSP3T1B1M2QEH, Digi-Key # EG2451-ND, Mouser # 612-200-C1121 &lt;br&gt;
-
-&lt;b&gt; mom-off-mom : &lt;/b&gt; &lt;br&gt;
-C&amp;K # T105SHCQE, Digi-Key # T105SHCQE-ND NOT STOCKED, Mouser # 611-T105SHCQE &lt;br&gt;
-E-switch # 200MSP4T1B1M2QEH, Digi-Key # 200MSP4T1B1M2QEH-ND NOT STOCKED, Mouser # 612-200MSP4T1B1M2QE&lt;br&gt;
-
-&lt;b&gt; on-off-mom : &lt;/b&gt; &lt;br&gt;
-C&amp;K # 107SHCQE, Digi-Key # CKN9905-ND NOT STOCKED, Mouser # 611-T107SHCQE &lt;br&gt;
-E-switch # 200MSP5T1B2M2QE, Digi-Key # 200MSP5T1B2M2QE-ND NOT STOCKED, Mouser # 612-200MSP5T1B2M2QE NOT STOCKED&lt;br&gt;
-
-&lt;b&gt; on-mom : &lt;/b&gt; &lt;br&gt;
-C&amp;K # T108SHCQE, Digi-Key # T108SHCQE-ND NOT STOCKED, Mouser # 611-T108SHCQE NOT STOCKED &lt;br&gt;
-E-switch # 200MSP2T1B1M2RE, Digi-Key # 200MSP2T1B1M2RE-ND, Mouser # 612-200MSP2T1B1M2QE &lt;br&gt;&lt;br&gt;
-NOTE: some of these have threaded bushings and some do not.  Since bushing is hidden, it shouldn't matter.</description>
+<description>&lt;b&gt;BETA!  SB0014&lt;/b&gt; - SWITCH, TOGGLE, SPDT, 120V, 2A, PCB pins&lt;br&gt;
+Available in on-on, on-off-on, mom-off-mom, on-off-mom and on-mom</description>
 <gates>
 <gate name="G$1" symbol="SPDT-TOGGLE" x="-2.54" y="0"/>
 </gates>
@@ -2254,14 +2111,7 @@ NOTE: some of these have threaded bushings and some do not.  Since bushing is hi
 </devices>
 </deviceset>
 <deviceset name="DPDT-TOGGLE" prefix="S">
-<description>&lt;b&gt;BETA!  SB0015 - SWITCH, TOGGLE, DPDT, 120V, 3A, PCB pins&lt;/b&gt;&lt;br&gt;
-&lt;b&gt;on-on : &lt;/b&gt;&lt;br&gt;
-C&amp;K # T201SHCQE, Digi-Key # CKN1182-ND, Mouser # 611-T201-001 &lt;br&gt;
-E-switch # 200MDP1T1B1M2QE, Digi-Key #  EG2456-ND, Mouser # 612-200MDP1T1B1M2QE &lt;br&gt;
-
-&lt;b&gt;on-off-on : &lt;/b&gt;&lt;br&gt;
-C&amp;K # T203SHCQE, Digi-Key # T203SHCQE-ND, Mouser # 611-T203SHCQE NOT STOCKED &lt;br&gt;
-E-switch # 200MDP3T1B1M2QE, Digi-Key # 200MDP3T1B1M2QEH-ND NOT STOCKED , Mouser # 612-200MDP3T1B1M2QE &lt;br&gt;</description>
+<description>&lt;b&gt;BETA!  SB0015 &lt;/b&gt;- SWITCH, TOGGLE, DPDT, 120V, 3A, PCB pins, available in on-on and on-off-on</description>
 <gates>
 <gate name="G$1" symbol="DPDT" x="0" y="0"/>
 </gates>
@@ -2282,8 +2132,7 @@ E-switch # 200MDP3T1B1M2QE, Digi-Key # 200MDP3T1B1M2QEH-ND NOT STOCKED , Mouser 
 </devices>
 </deviceset>
 <deviceset name="BARRELJACK" prefix="J">
-<description>BETA!  SB0018 - Barrel Jack, 2.1x5.5mm &lt;br&gt;
-CUI Inc # PJ-064A, Digi-Key # CP-064A-ND</description>
+<description>&lt;b&gt;BETA!  SB0018&lt;/b&gt; - Barrel Jack, 2.1x5.5mm</description>
 <gates>
 <gate name="G$1" symbol="POWER_JACK" x="-2.54" y="2.54"/>
 </gates>
@@ -2328,9 +2177,7 @@ CUI Inc # PJ-064A, Digi-Key # CP-064A-ND</description>
 </devices>
 </deviceset>
 <deviceset name="POTENTIOMETER" prefix="R">
-<description>BETA!  SB0012 - Potentiometer, Rear Mount Bushingless, flat shaft&lt;br&gt;&lt;br&gt;
-Bourns # PTV09A-4025F, Digi-Key # PTV09A-4025F-Bxxx-ND , Mouser # 652-PTV09A-4025FBxxx&lt;br&gt;
-Where xxx = value. e.g. 103 = 10k, 202 = 2k, etc.</description>
+<description>&lt;b&gt;BETA!  SB0012&lt;/b&gt; - Potentiometer, Rear Mount Bushingless, flat shaft, various R-values available</description>
 <gates>
 <gate name="G$1" symbol="POTENTIOMETER" x="0" y="0"/>
 </gates>
@@ -2348,7 +2195,7 @@ Where xxx = value. e.g. 103 = 10k, 202 = 2k, etc.</description>
 </devices>
 </deviceset>
 <deviceset name="USB" prefix="J">
-<description>BETA!  SB0021 - USB mini-B connector.  BACK PANEL ONLY - DOES NOT MOUNT TO PCB.</description>
+<description>&lt;b&gt;BETA!  SB0021&lt;/b&gt; - USB mini-B connector.  BACK PANEL ONLY - DOES NOT MOUNT TO PCB.</description>
 <gates>
 <gate name="G$1" symbol="USB" x="-2.54" y="-2.54"/>
 </gates>
@@ -2361,11 +2208,8 @@ Where xxx = value. e.g. 103 = 10k, 202 = 2k, etc.</description>
 </devices>
 </deviceset>
 <deviceset name="SWITCH,BUTTON,SMT" prefix="SW">
-<description>&lt;b&gt;BETA!  Switch, DPDT, Push-Push, SMT, 200mA, 14V, ROUND CAP&lt;/b&gt;&lt;br&gt;
-Panasonic # ESB33535A, Digi-Key # P15877SCT-ND6&lt;br&gt;
-C&amp;K # PVB6 EE 300 NS LFS, Digi-Key # CKN10533CT-ND, Mouser # 611-PVB6EE300NSLFS&lt;br&gt;
-&lt;b&gt;Switch, DPDT, Momentary, SMT, 200mA, 14V &lt;/b&gt;&lt;br&gt;
-C&amp;K # PVB6 OA 300 NS LFS, Digi-Key # CKN10534CT-ND, Mouser # 611-PVB6OA300NSLFS&lt;br&gt;</description>
+<description>&lt;b&gt;ALPHA!&lt;/b&gt;  Switch, DPDT, SMT, 200mA, 14V, ROUND CAP&lt;br&gt;
+Available in Momentary and Push-on/Push-off</description>
 <gates>
 <gate name="G$1" symbol="DPDT" x="0" y="0"/>
 </gates>
@@ -2386,15 +2230,8 @@ C&amp;K # PVB6 OA 300 NS LFS, Digi-Key # CKN10534CT-ND, Mouser # 611-PVB6OA300NS
 </devices>
 </deviceset>
 <deviceset name="SWITCH,BUTTON,ROUND,7MM" prefix="SW">
-<description>&lt;b&gt;BETA!  SB0003 - Switch, DPDT, PTH, 200mA, 14V, 7mm ROUND CAP&lt;/b&gt;&lt;br&gt;
-Momentary - C&amp;K # PVB6 THT OA 300 NS LFS, Digi-Key # , Mouser # 611-PVB6THTOA300NS&lt;br&gt;
-Push-on/Push-off - C&amp;K # PVB6 THT EE 300 NS LFS, Digi-Key # , Mouser # 611-PVB6THTEE300NS&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Cap&lt;/b&gt;&lt;br&gt;
-Red - C&amp;K # PV RD, Digi-Key # 401-1150-ND, Mouser # &lt;br&gt;
-Black - C&amp;K # PV BK, Digi-Key # 401-1148-ND, Mouser # &lt;br&gt;
-Gray - C&amp;K # PV GY, Digi-Key # &lt;br&gt;
-White - C&amp;K # PV WH, Digi-Key # &lt;br&gt;</description>
+<description>&lt;b&gt;BETA!  SB0003&lt;/b&gt; - Switch, DPDT, PTH, 200mA, 14V, 7mm ROUND CAP&lt;br&gt;
+Momentary and Push-on/Push-off with various color caps</description>
 <gates>
 <gate name="G$1" symbol="DPDT" x="0" y="0"/>
 </gates>
@@ -2415,7 +2252,7 @@ White - C&amp;K # PV WH, Digi-Key # &lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="SERIES_100_BASE">
-<description>BETA!  SB0026 - Series 100 Base PCB.  Includes board outline and holes for mounting in the bottom of the SB001 Series 100 enclosure.</description>
+<description>&lt;b&gt;BETA!  SB0026&lt;/b&gt; - Series 100 Base PCB.  Includes board outline and holes for mounting in the bottom of the SB001 Series 100 enclosure.</description>
 <gates>
 <gate name="G$1" symbol="SERIES_100_BASE" x="0" y="0"/>
 </gates>
@@ -2428,15 +2265,8 @@ White - C&amp;K # PV WH, Digi-Key # &lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="SWITCH,BUTTON,RECT,6X12MM" prefix="SW">
-<description>&lt;b&gt;BETA!  SB0019 - Switch, Push Button, DPDT, PTH, 200mA, 14V, 6x12mm Rect Cap&lt;/b&gt;&lt;br&gt;
-Momentary - C&amp;K # PVB6 THT OA 300 NS LFS, Digi-Key # , Mouser # 611-PVB6THTOA300NS&lt;br&gt;
-Push-on/Push-off - C&amp;K # PVB6 THT EE 300 NS LFS, Digi-Key # , Mouser # 611-PVB6THTEE300NS&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Cap&lt;/b&gt;&lt;br&gt;
-Red - C&amp;K # PV RD, Digi-Key # 401-1150-ND, Mouser # &lt;br&gt;
-Black - C&amp;K # PV BK, Digi-Key # 401-1148-ND, Mouser # &lt;br&gt;
-Gray - C&amp;K # PV GY, Digi-Key # &lt;br&gt;
-White - C&amp;K # PV WH, Digi-Key # &lt;br&gt;</description>
+<description>&lt;b&gt;BETA!  SB0019&lt;/b&gt; - Switch, Push Button, DPDT, PTH, 200mA, 14V, 6x12mm Rect Cap&lt;br&gt;
+Available in Momentary and Push-on/Push-off with various color caps</description>
 <gates>
 <gate name="G$1" symbol="DPDT" x="0" y="0"/>
 </gates>
@@ -2457,11 +2287,8 @@ White - C&amp;K # PV WH, Digi-Key # &lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="SWITCH,BUTTON,ROUND,6MM" prefix="SW">
-<description>&lt;b&gt;BETA!  SB0020 - Switch, Push Button, DPDT, 6mm Round Cap&lt;/b&gt;&lt;br&gt;
-Momentary - E-Switch # TL2230OAF140, Digi-Key # TL2230OAF140-ND NOT STOCKED, Mouser #  612-TL2230-OA &lt;br&gt;
-Push-on / Push-Off - E-Switch # TL2230EEF100, Digi-Key # TL2230EEF100-ND NOT STOCKED, Mouser # 612-TL2230EEF100 &lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Cap, Round 5.9 mm&lt;/b&gt;&lt;br&gt;
+<description>&lt;b&gt;BETA!  SB0020&lt;/b&gt; - Switch, Push Button, DPDT, 6mm Round Cap&lt;br&gt;
+Available in Momentary and Push-on / Push-Off&lt;br&gt;
 Cap is hard to find&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="DPDT" x="0" y="0"/>
@@ -2483,14 +2310,8 @@ Cap is hard to find&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="SWITCH,BUTTON,RECT,5X5MM" prefix="SW">
-<description>&lt;b&gt;BETA!  SB0030 - Switch, Push Button, DPDT, 5x5mm Rect Cap&lt;/b&gt;&lt;br&gt;
-Momentary - E-Switch # TL2230OAF140, Digi-Key # TL2230OAF140-ND NOT STOCKED, Mouser #  612-TL2230-OA &lt;br&gt;
-Push-on / Push-Off - E-Switch # TL2230EEF100, Digi-Key # TL2230EEF100-ND NOT STOCKED, Mouser # 612-TL2230EEF100 &lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Cap, Rectangular 5x5mm, 9 mm tall&lt;/b&gt;&lt;br&gt;
-E-Switch #  1DFBLK (Black) , Digi-Key #, Mouser #  612-1DFBLK &lt;br&gt;
-E-Switch #  1DBLK (Black) , Digi-Key #, Mouser #  612-1D-BK &lt;br&gt;
-E-Switch #  1D-GRY (Gray) , Digi-Key #, Mouser #  612-1D-GR &lt;br&gt;</description>
+<description>&lt;b&gt;BETA!  SB0030&lt;/b&gt; - Switch, Push Button, DPDT, 5x5mm Rect Cap, &lt;br&gt;
+Available in Momentary and Push-on / Push-Off with various color caps</description>
 <gates>
 <gate name="G$1" symbol="DPDT" x="0" y="0"/>
 </gates>
@@ -2511,14 +2332,8 @@ E-Switch #  1D-GRY (Gray) , Digi-Key #, Mouser #  612-1D-GR &lt;br&gt;</descript
 </devices>
 </deviceset>
 <deviceset name="ROTARY_ENCODER_SB0031" prefix="SW">
-<description>&lt;b&gt;BETA!  SB0031 - Switch, Encoder, Rotary, 6mm T18-shaft&lt;/b&gt;&lt;br&gt;
-&lt;b&gt;20 counts per revolution, with switch&lt;/b&gt;&lt;br&gt;
-TT Electronics # EN11-HSB1AQ20, Digi-Key # 987-1187-ND, Mouser # 858-EN11-HSB1AQ20 &lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Knob - 13.7mm dia, 6mm T18-shaft, Black body, White indicator&lt;/b&gt;&lt;br&gt;
-Eagle Knobs &amp; Dials # 450-AE141, Mouser # 450-AE141&lt;br&gt;
-&lt;b&gt;Knob - 18.2mm dia, 6mm T18-shaft, Gray body, Black indicator&lt;/b&gt;&lt;br&gt;
-Eagle Knobs &amp; Dials # 450-AE185, Mouser # 450-AE185&lt;br&gt;</description>
+<description>&lt;b&gt;BETA!  SB0031&lt;/b&gt; - Switch, Encoder, Rotary, 6mm T18-shaft&lt;br&gt;
+20 counts per revolution, with switch and knob</description>
 <gates>
 <gate name="G$1" symbol="ROTARY_ENCODER" x="0" y="0"/>
 </gates>
@@ -2530,6 +2345,87 @@ Eagle Knobs &amp; Dials # 450-AE185, Mouser # 450-AE185&lt;br&gt;</description>
 <connect gate="G$1" pin="COM" pad="C"/>
 <connect gate="G$1" pin="P$4" pad="SW+"/>
 <connect gate="G$1" pin="P$5" pad="SW-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SERIES_100_BACKPANEL">
+<description>&lt;b&gt;BETA!  SB0029&lt;/b&gt; - Series100 back panel</description>
+<gates>
+<gate name="G$1" symbol="SERIES_100_BACKPANEL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SERIES_100_BACKPANEL">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_3MM_CLEAR" prefix="LED">
+<description>&lt;b&gt;BETA!  SB0007&lt;/b&gt; - LED, 3mm, clear, various colors</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="LED3MM-CLEAR">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_3MM_DIFFUSED">
+<description>&lt;b&gt;BETA!  SB0008&lt;/b&gt; - LED, 3mm, diffused, various colors</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="LED3MM-DIFFUSED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_5MM_CLEAR">
+<description>&lt;b&gt;BETA!  SB0009&lt;/b&gt; - LED, 5mm, clear, various colors</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="LED5MM-CLEAR">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_5MM_DIFFUSED">
+<description>&lt;b&gt;BETA!  SB0010&lt;/b&gt; - LED, 5mm, Diffused, various colors</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="LED5MM-DIFFUSED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>

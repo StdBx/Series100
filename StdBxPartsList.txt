@@ -1,0 +1,32 @@
+Part No.,Name,Rev,Filetype,Description,Status
+SB0001,"Enclosure, Series100halfcase",3.1,.stl,Enclosure component. Two pieces required (plus front and back panels) to form enclosure.,Beta
+SB0002,"Panel, Series_100, Front with PCB",1.0,.lbr,"Eagle lbr component.  Defines front panel outline with mounting holes.  Defines standard PCB outline with mounting holes, keepouts and height restrictions.",Beta
+SB0003,"Switch, Push Button, DPDT, 7mm Round Cap",1.0,.lbr,Push button for front panel with round cap.  Available in momentary and push-on/push-off.  Various cap colors.,Beta
+SB0004,"Display, 7-Seg 4-Dig LED",1.0,.lbr,"LED 4-digit display, 10mm(0.39"") high, with bezel.  Available in various colors.",Beta
+SB0005,"Display, 16x2 LCD ",1.0,.lbr,LCD display with bezel. Based on 16x2 LCD display from SparkFun library.  Parallel interface version.,Beta
+SB0006,"Display, 7-Seg 8-Dig LED",1.0,.lbr,"LED 8-digit display with bezel.   Display height, 0.2"", appears larger due to bubble.  See SB0025 for module definition.",Beta
+SB0007,"LED, 3mm, Clear",1.0,.lbr,Single 3 mm LED.  LED lens on front panel is clear. (cut out on reveal and diffused layers),Beta
+SB0008,"LED, 3mm, Diffused",1.0,.lbr,Single 3 mm LED.  LED lens on front panel is diffused. (cut out on reveal layer only),Beta
+SB0009,"LED, 5mm, Clear",1.0,.lbr,Single 5 mm LED.  LED lens on front panel is clear. (cut out on reveal and diffused layers),Beta
+SB0010,"LED, 5mm, Diffused",1.0,.lbr,Single 5 mm LED.  LED lens on front panel is diffused. (cut out on reveal layer only),Beta
+SB0011,"Switch, Encoder, Rotary",1.0,.lbr,Encoder with push-button.,Beta
+SB0012,Potentiometer,1.0,.lbr,Potentiometer.  Various values.  Linear or log taper.,Beta
+SB0013,"Switch, Toggle, SPST",1.0,.lbr,"Toggle switch, SPST (2 pin),  off/on.  Can be mounted with or without front nut.",Beta
+SB0014,"Switch, Toggle, SPDT",1.0,.lbr,"Toggle switch, SPDT (3 pin).  Can be mounted with or without front nut.  Available in on-on, on-off-on, mom-off-mom, on-off-mom, on-mom.",Beta
+SB0015,"Switch, Toggle, DPDT",1.0,.lbr,"Toggle switch, DPDT (6 pin).  Can be mounted with or without front nut.  Available in on-on, on-off-on.",Beta
+SB0016,"Connector, BNC",1.0,.lbr,Mounts to front panel with nut (back side) AND soldered to circuit board.,Beta
+SB0017,"Connector, Banana Plug Recepticle",1.0,.lbr,Accepts standard 5mm banana plug.  Available in various colors.  Mounts to front panel with nut (back side) AND soldered to circuit board.,Beta
+SB0018,"Connector, Power, Barrel Jack 2.1x5.5",1.0,.lbr,Mounts to front panel with nut (front side) AND soldered to circuit board.,Beta
+SB0019,"Switch, Push Button, DPDT, 6x12mm Rect Cap",1.0,.lbr,Push button for front panel with rectangular cap.  Available in momentary and push-on/push-off.  Various cap colors.,Beta
+SB0020,"Switch, Push Button, DPDT, 6mm Round Cap",1.0,.lbr,Push button for front panel with round cap.  Available in momentary and push-on/push-off.  Various cap colors. Caps hard to find.,Beta
+SB0021,"Connector, USB mini-B",1.0,.lbr,BACK PANEL ONLY - DOES NOT MOUNT TO PCB!  Defines cutouts for mounting connector to back panel but wrong height for std PCB mount.  See SB0023 or SB0024 for daughter-card to ribbon cable to PCB.,Beta
+SB0022,"Connector, Power, BACK PANEL ONLY, Barrel Jack 2.1x5.5",1.0,.lbr,BACK PANEL ONLY - DOES NOT MOUNT TO PCB!  Defines cutouts for mounting connector to back panel but wrong height for std PCB mount.  Use wires to connect to PCB.,Beta
+SB0023,"Module, USB",1.0,Eagle,Bridges connector pins to ribbon cable.  Use for applications that take USB directly.  See SB0024 for FTDI.,Beta
+SB0024,"Module, FTDI, USB-to-serial",1.0,Eagle,Puts USB to serial onto USB connector then ribbon cable to main PCB.  Std 6-pin FTDI interface.,Beta
+SB0025,"Module, Display, 7-Seg 8-Dig LED",1.0,Eagle,PCB design files for 8 digit LED display based on HP Bubble 4-digit parts.  Serial input for segments reduces pins.,Beta
+SB0026,"PCB, Series100, Base",1.0,Eagle,PCB design files for board that mounts to bottom of enclosure.,Beta
+SB0027,"PCB, Series100, Proto",1.0,Eagle,PCB design files for prototyping board that fits Series100 case and front panel.  Overlay components in Eagle to generate Front Panel files.,Beta
+SB0028,"PCB, Series100, Proto with UNO",1.0,Eagle,PCB design files for prototyping board that fits Series100 case and front panel with mounting for Arduino UNO board.  Overlay components in Eagle to generate Front Panel files.,Beta
+SB0029,"Panel, Series_100, Back",1.0,.lbr,"Eagle lbr component.  Defines panel outline without mounting holes.  No PCB definition.  For mounting ""panel mount"" components like SB0021 and SB0022.",Beta
+SB0030,"Switch, Push Button, DPDT, 5x5mm Rect Cap",1.0,.lbr,Push button for front panel with rectangulare cap.  Available in momentary and push-on/push-off.  Various cap colors.,Beta
+SB0031,"Switch, Encoder, Rotary",1.0,.lbr,Encoder with push-button.,Beta
